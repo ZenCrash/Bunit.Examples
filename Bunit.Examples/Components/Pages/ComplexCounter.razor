@@ -11,7 +11,6 @@
     <p role="status" id="p1x">Current 1x*count: @currentCount</p>
     <p role="status" id="p2x">Current 2x*count: @currentCount2</p>
     <p role="status" id="p3x">Current 4x*count: @currentCount3</p>
-    <p role="status" id="p4x">Current 8x*count: @currentCount4</p>
   </div>
 </div>
 
@@ -21,13 +20,11 @@
   private int currentCount = 0;
   private int currentCount2 = 0;
   private int currentCount3 = 0;
-  private int currentCount4 = 0;
 
   private void IncrementCount()
   {
     currentCount++;
     currentCount2 = currentCount * 2;
     currentCount3 = currentCount * 4;
-    currentCount4 = currentCount * 8;
   }
 }
