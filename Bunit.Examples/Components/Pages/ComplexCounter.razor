@@ -5,28 +5,26 @@
 
 <h1>Counter</h1>
 
-<div id="1">
-  <p id="id1">Count Value</p>
-  <div id="id1">
-    <p role="status" id="id1">Current 1x*count: @currentCount</p>
-    <p role="status" id="id2">Current 2x*count: @currentCount2</p>
-    <p role="status" id="id3">Current 4x*count: @currentCount3</p>
+<div id="div1">
+  <p id="p1">Count Value</p>
+  <div id="div2">
+    <p role="status" id="p1x">Current 1x*count: @currentCount</p>
+    <p role="status" id="p2x">Current 2x*count: @currentCount2</p>
+    <p role="status" id="p4x">Current 4x*count: @currentCount3</p>
   </div>
 </div>
-
-
 
 <button class="btn btn-primary" @onclick="IncrementCount">Click me</button>
 
 @code {
-    private int currentCount = 0;
-    private int currentCount2 = 0;
-    private int currentCount3 = 0;
+  private int currentCount = 0;
+  private int currentCount2 = 0;
+  private int currentCount3 = 0;
 
-    private void IncrementCount()
-    {
-        currentCount++;
-        currentCount2 = currentCount * 2;
-        currentCount3 = currentCount * 4;
-    }
+  private void IncrementCount()
+  {
+    currentCount++;
+    currentCount2 = currentCount * 2;
+    currentCount3 = currentCount * 4;
+  }
 }
